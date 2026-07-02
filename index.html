@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="A relentless run of 1,500 hard riddles." />
+    <title>Riddles</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="game" class="game" aria-labelledby="game-title">
+      <p id="counter" class="counter">Riddle Count: 1</p>
+
+      <section class="game__content">
+        <header class="title-block">
+          <h1 id="game-title">RIDDLES</h1>
+          <p class="high-score">HI SCORE: <span id="high-score">0</span></p>
+        </header>
+
+        <div id="riddle-stage" class="riddle-stage">
+          <p id="riddle" class="riddle"></p>
+          <form id="answer-form" class="answer-form" novalidate>
+            <label class="sr-only" for="answer">Your answer</label>
+            <input
+              id="answer"
+              name="answer"
+              type="text"
+              placeholder="Type your answer"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+              required
+            />
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+    </main>
+
+    <section id="victory" class="victory" aria-labelledby="victory-title" hidden>
+      <h2 id="victory-title" class="sr-only">You win!</h2>
+      <div id="victory-words" class="victory__words" aria-hidden="true"></div>
+    </section>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

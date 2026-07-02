@@ -1,0 +1,4 @@
+make a website that starts on a white screen. this white screen has black bold words in the middle that take up most of the space. it says: "RIDDLES" undernath that, have the same font and color but say: "HI SCORE:"  underneath that, start a 
+random cycle of 1500 hard riddles. under that, add a text box where you can type the answer. if you gte it right, it will move you to another riddle. once you get to 1500 riddles correct, make a green puffy word appear all over the screen 
+that says: "YOU WIN!" aloso, each time you lose or get the riddle wrong, it takes you back to another riddle and the count turns back to 1. there is a riddle count on the top of the screen in the right hand corner. ecah time you pass a riddle, 
+he count goes up by one. whenever you get a riddle wrong, the hi score changes to the number of riddles oyu got right.
